@@ -3,7 +3,6 @@ import sys
 import os
 import string
 import math
-#from nltk.tokenize import word_tokenize
 
 from yaml.events import DocumentEndEvent
 from nltk.corpus import wordnet as wn
