@@ -98,8 +98,6 @@ def tokenize(document):
         #print(token, "=>", lemma)
         lemmanized_words.add(lemma)
     
-    #print(lemmanized_words)
-    
     for word in lemmanized_words:
         if word in stopwords or word in punctuation:
             delete_word.add(word)
@@ -117,7 +115,7 @@ def compute_idfs(documents):
     resulting dictionary.
     """
     
-    #print("Calculating inverse document frequencies...")
+    print("Calculating inverse document frequencies...")
 
     # create and empty dict to map words to idfs and a word_list set for each doc
     idfs = dict()
@@ -144,7 +142,7 @@ def top_files(query, files, idfs, n):
     files that match the query, ranked according to tf-idf.
     """
     
-    #print("Calculating TF-IDFs for top files...")
+    print("Calculating TF-IDFs for top files...")
 
     # Calculate the TF-IDFs for input, ensure it matches query
     tfidfs = []
